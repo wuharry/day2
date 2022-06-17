@@ -1,11 +1,18 @@
 {
+  "homepage": "https://wuharry.github.io/day2",
   "name": "day2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
